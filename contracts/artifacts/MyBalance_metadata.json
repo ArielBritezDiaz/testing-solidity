@@ -1,0 +1,113 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_Password",
+						"type": "string"
+					},
+					{
+						"internalType": "int128",
+						"name": "value",
+						"type": "int128"
+					}
+				],
+				"name": "DecreaseBalance",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_Password",
+						"type": "string"
+					},
+					{
+						"internalType": "int128",
+						"name": "value",
+						"type": "int128"
+					}
+				],
+				"name": "IncreaseBalance",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_Password",
+						"type": "string"
+					},
+					{
+						"internalType": "int128",
+						"name": "value",
+						"type": "int128"
+					}
+				],
+				"name": "NewPocket",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_Password",
+						"type": "string"
+					}
+				],
+				"name": "SetPassword",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/myBalance.sol": "MyBalance"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/myBalance.sol": {
+			"keccak256": "0x761e6161d50961763aafbed5eb9f4b66b7f942366c7e3de02b4792db618307cd",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://3b23884e8081da870585698cbb11ae0cf872d3832f5cbb2139968d40e870d809",
+				"dweb:/ipfs/Qmen9cGQDLavhy5ru6wWJ7U41rFfQYSCTedTvsu56CYE6z"
+			]
+		}
+	},
+	"version": 1
+}
