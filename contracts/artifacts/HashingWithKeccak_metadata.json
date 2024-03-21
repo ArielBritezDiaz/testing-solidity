@@ -63,11 +63,11 @@
 	},
 	"sources": {
 		"contracts/hashing-keccak.sol": {
-			"keccak256": "0x6e4435e6147ab4fa8a12783c0710db78eecd0050932907504c134c4850465706",
+			"keccak256": "0x4546da0414942cb150c9ae84fd2c91b43797bbabd35ee425afae9eabbe99aa03",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://2aacc6657f8993372bf88148e75fde2b6d61080279368d3f86117bc64c43a7e9",
-				"dweb:/ipfs/QmckHzBuoAVRJ6DQDyRYhqJeTQoMztyMLypY58fPSDg7jG"
+				"bzz-raw://5b06ed1700f684f446299c0b12a0a462427888972abdf258fadd313bc1097da1",
+				"dweb:/ipfs/QmRmNSr2TYGoUqhdyXxiZLVjWfabCQdc8hXodSpXbSqzSF"
 			]
 		}
 	},

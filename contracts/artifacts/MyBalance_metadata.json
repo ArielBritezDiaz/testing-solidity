@@ -6,6 +6,19 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"name": "AvailableBalance",
+				"outputs": [
+					{
+						"internalType": "int128",
+						"name": "_availableBalance",
+						"type": "int128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -60,6 +73,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "QuantityShares",
+				"outputs": [
+					{
+						"internalType": "int128",
+						"name": "_quantityShares",
+						"type": "int128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -70,6 +96,38 @@
 				"name": "SetPassword",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "TotalBalance",
+				"outputs": [
+					{
+						"internalType": "int128",
+						"name": "_Balance",
+						"type": "int128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "index",
+						"type": "uint8"
+					}
+				],
+				"name": "checkPocket",
+				"outputs": [
+					{
+						"internalType": "int128",
+						"name": "_pocketBalance",
+						"type": "int128"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -101,11 +159,11 @@
 	},
 	"sources": {
 		"contracts/myBalance.sol": {
-			"keccak256": "0x761e6161d50961763aafbed5eb9f4b66b7f942366c7e3de02b4792db618307cd",
+			"keccak256": "0x9fc1159f475828a1553ea3df0783953e34440dc1f02dbc8d701f2699f504aa14",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://3b23884e8081da870585698cbb11ae0cf872d3832f5cbb2139968d40e870d809",
-				"dweb:/ipfs/Qmen9cGQDLavhy5ru6wWJ7U41rFfQYSCTedTvsu56CYE6z"
+				"bzz-raw://c2f086f35bcc4dad597f180df36d3c049fe2da44c9b9a5b36a2a63c541bbe23a",
+				"dweb:/ipfs/QmQ6BdxMhFnp3TMCNWrdGg9NFE1Crh2gRU3nbcqE6f6JE7"
 			]
 		}
 	},

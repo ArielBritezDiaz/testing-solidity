@@ -2,6 +2,9 @@
 
 pragma solidity ^0.8.0;
 
+//functional myBalance code
+//video: https://www.youtube.com/watch?v=o33HepeGK3s&ab_channel=ReddeInvestigacionesdeTecnolog%C3%ADaAvanzadaRITAUD
+
 contract MyBalance {
     int128 Balance; //entero de 128 bits
     int128 availableBalance;
@@ -14,7 +17,8 @@ contract MyBalance {
     //external: permite acceder a la función desde fuera del contrato
     //payable: permite recibir ether como parte de la llamada de la función, incluyendo zero eth. 'non-payable' no permite recibir ether.
     function SetPassword(string calldata _Password) external payable {
-        require(keccak256(abi.encodePacked(_Password)) == keccak256(abi.encodePacked('')), "Password incorrect"); //require: permite validar requisitos, si no cumplen, se revierte la transacción y no se realiza ninguna operación más
+        require(keccak256(abi.encodePacked(_Password)) != keccak256(abi.encodePacked('')), "Password incorrect"); //require: permite validar requisitos, si no cumplen, se revierte la transacción y no se realiza ninguna operación más
+        
         Password = _Password;
     }
 
@@ -37,8 +41,25 @@ contract MyBalance {
     function NewPocket(string calldata _Password, int128 value) external payable {
         require(keccak256(abi.encodePacked(Password)) == keccak256(abi.encodePacked(_Password)), "Password incorrect");
         require(value <= availableBalance, "Insuficcient founds");
+
         Pocket.push(value);
         availableBalance -= value;
         quantityShares ++;
+    }
+
+    function TotalBalance() external view returns(int128 _Balance) {
+        _Balance = Balance;
+    }
+
+    function AvailableBalance() external view returns(int128 _availableBalance) {
+        _availableBalance = availableBalance;
+    }
+
+    function checkPocket(uint8 index) external view returns(int128 _pocketBalance) {
+        _pocketBalance = Pocket[index];
+    }
+
+    function QuantityShares() external view returns(int128 _quantityShares) {
+        _quantityShares = quantityShares;
     }
 }
