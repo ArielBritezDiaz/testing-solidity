@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "GetClient",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/2_walletBalance_flit.sol": "NewClient"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/2_walletBalance_flit.sol": {
+			"keccak256": "0x0787e76dd4acade2e77b4e4a1f211661b18096255f0cf9f8436c97c08cf9c6c8",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://2aece383b0c3e0835520efc7c61d91339ac2a65bca218b384539ee2cab62173d",
+				"dweb:/ipfs/QmRiR8yTqfz3km7n5eJZy8po2D8UhpyNm1o82t159bVTdm"
+			]
+		}
+	},
+	"version": 1
+}
