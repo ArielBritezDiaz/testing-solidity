@@ -27,6 +27,32 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "DecreaseBalance",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "DepositFunds",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "string",
 						"name": "_username",
 						"type": "string"
@@ -74,9 +100,9 @@
 						"type": "address"
 					},
 					{
-						"internalType": "int128",
+						"internalType": "int256",
 						"name": "",
-						"type": "int128"
+						"type": "int256"
 					},
 					{
 						"internalType": "int128",
@@ -84,9 +110,9 @@
 						"type": "int128"
 					},
 					{
-						"internalType": "int128",
+						"internalType": "int256",
 						"name": "",
-						"type": "int128"
+						"type": "int256"
 					},
 					{
 						"internalType": "uint8",
@@ -103,16 +129,37 @@
 						"internalType": "address",
 						"name": "_addr",
 						"type": "address"
-					},
-					{
-						"internalType": "int128",
-						"name": "_value",
-						"type": "int128"
 					}
 				],
 				"name": "IncreaseBalance",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "PaymentClient",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "ToWithdrawFunds",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -144,11 +191,11 @@
 	},
 	"sources": {
 		"contracts/1_registerUser_flit.sol": {
-			"keccak256": "0x8d3931f3678632a53507599ec6ff0ab54b0b0f9c4e09ebee27b65377c52f66e4",
+			"keccak256": "0xbe5d00c4b417443e2d1916f483ab952c3638ad706117bf8f3bef520d03b2862e",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://810e8a2f731009b9fc38e252cf72414b4a38976988f2524c0321b4814e19c3fc",
-				"dweb:/ipfs/QmU8UMESGd2nMd6PaE3A2zsU163gtfC3yAJhyXZ49YFKRf"
+				"bzz-raw://5a0e76e397fb5937f756f8292a51e0afcf7a6df57b03f44d9d8d29218ed8e743",
+				"dweb:/ipfs/QmdZe9jh7CERkLsaQsev6xRGpHGxgH7ebTeYrZkKNiK59t"
 			]
 		}
 	},

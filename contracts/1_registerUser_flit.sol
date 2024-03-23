@@ -12,9 +12,9 @@ contract NewClient {
         uint id;
         address addr;
         string username;
-        int128 balance;
+        int balance;
         int128 availableBalance;
-        int128 found;
+        int fund;
         uint8 quantityShares;
     }
 
@@ -40,19 +40,44 @@ contract NewClient {
         revert("User not found");
     }
 
-    function GetWalletClient(address _addr) public view returns(string memory, address, int128, int128, int128, uint8) {
+    //Get the wallet of the client
+    function GetWalletClient(address _addr) public view returns(string memory, address, int, int128, int, uint8) {
         for(uint i = 0; i < quantityShare; i++) {
             if(keccak256(abi.encodePacked(clients[i].addr)) == keccak256(abi.encodePacked(_addr))) {
-                return (clients[i].username, clients[i].addr, clients[i].balance, clients[i].availableBalance, clients[i].found, clients[i].quantityShares);
+                return (clients[i].username, clients[i].addr, clients[i].balance, clients[i].availableBalance, clients[i].fund, clients[i].quantityShares);
             }
         }
         revert("Wallet not found");
     }
 
-    function IncreaseBalance(address _addr, int128 _value) public payable {
-        uint idClient = clientsAddress[_addr];
-        clients[idClient].balance += msg.value;
+    //Post a new balance to increase
+    function IncreaseBalance(address _addr) public payable {
+        require(msg.value > 0);
+        clients[clientsAddress[_addr]].balance += int(msg.value);
     }
 
+    function DecreaseBalance(address _addr) public payable {
+        require(msg.value > 0);
+        clients[clientsAddress[_addr]].balance -= int(msg.value);
+    }
 
+    //payment client to client
+    function PaymentClient(address _addr) public payable {
+        require(msg.value > 0);
+        clients[clientsAddress[msg.sender]].balance -= int(msg.value);
+        clients[clientsAddress[_addr]].balance += int(msg.value);
+    }
+
+    //deposit new founds
+    function DepositFunds(address _addr) public payable {
+        require(msg.value > 0);
+        clients[clientsAddress[_addr]].balance -= int(msg.value);
+        clients[clientsAddress[_addr]].fund += int(msg.value);
+    }
+
+    function ToWithdrawFunds(address _addr) public payable {
+        require(msg.value > 0);
+        clients[clientsAddress[_addr]].fund -= int(msg.value);
+        clients[clientsAddress[_addr]].balance += int(msg.value);
+    }
 }
