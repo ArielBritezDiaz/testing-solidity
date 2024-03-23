@@ -25,27 +25,15 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "DecreaseBalance",
+				"inputs": [],
+				"name": "DecreaseAvailableBalance",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "DepositFunds",
+				"inputs": [],
+				"name": "DepositFund",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -74,6 +62,16 @@
 						"internalType": "string",
 						"name": "",
 						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -105,9 +103,9 @@
 						"type": "int256"
 					},
 					{
-						"internalType": "int128",
+						"internalType": "int256",
 						"name": "",
-						"type": "int128"
+						"type": "int256"
 					},
 					{
 						"internalType": "int256",
@@ -118,20 +116,26 @@
 						"internalType": "uint8",
 						"name": "",
 						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "IncreaseBalance",
+				"inputs": [],
+				"name": "InactiveClient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "IncreaseAvailableBalance",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -150,14 +154,15 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "ToWithdrawFunds",
+				"inputs": [],
+				"name": "ReactiveClient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ToWithdrawFund",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -176,7 +181,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/1_registerUser_flit.sol": "NewClient"
+			"contracts/smart-contract_flit.sol": "NewClient"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -190,12 +195,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/1_registerUser_flit.sol": {
-			"keccak256": "0xbe5d00c4b417443e2d1916f483ab952c3638ad706117bf8f3bef520d03b2862e",
+		"contracts/smart-contract_flit.sol": {
+			"keccak256": "0x0e740b39343efe112b1295efb5961750e6a77f9ebc5aacb66b226dca6c71d9a0",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://5a0e76e397fb5937f756f8292a51e0afcf7a6df57b03f44d9d8d29218ed8e743",
-				"dweb:/ipfs/QmdZe9jh7CERkLsaQsev6xRGpHGxgH7ebTeYrZkKNiK59t"
+				"bzz-raw://48321f69e40f8f9327a269afcd398373bbafff1343db57aadd01e9845fa6aae7",
+				"dweb:/ipfs/Qmb9yzUNGfAtCzPN5XZSscabhsmyyeBEqY1RTP3SLJqB9v"
 			]
 		}
 	},
