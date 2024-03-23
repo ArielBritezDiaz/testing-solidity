@@ -8,6 +8,17 @@
 			{
 				"inputs": [
 					{
+						"internalType": "contract NewClient",
+						"name": "_client",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "string",
 						"name": "_username",
 						"type": "string"
@@ -71,11 +82,11 @@
 			]
 		},
 		"contracts/2_walletBalance_flit.sol": {
-			"keccak256": "0xa5abd4abba50f254786c66621f10e8bbf91e0193d889fed8259fb83918b21325",
+			"keccak256": "0x69183e2ce0c4265114e82bb9f75f724515ff93a31be8829f0b071cd4f02a3ea7",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://bf56a1e313e6fc4119112359b9986106568ae2535d21565ea15d7ef555d5b136",
-				"dweb:/ipfs/QmVfHgyvmKzLeuetStn82RHyniaS36e6zrvUWCxbrV6gRW"
+				"bzz-raw://370f00ac1bd221b1e417055c3b826700b9f24f578e24a579d17faee636c52b42",
+				"dweb:/ipfs/QmS4eH94GF11i63RAi79T61bZiQ8EfS9mJAxW55CGdVpVr"
 			]
 		}
 	},

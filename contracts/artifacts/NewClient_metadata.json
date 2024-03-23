@@ -9,7 +9,26 @@
 				"inputs": [
 					{
 						"internalType": "string",
+						"name": "_username",
+						"type": "string"
+					}
+				],
+				"name": "CreateClient",
+				"outputs": [
+					{
+						"internalType": "address",
 						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_username",
 						"type": "string"
 					}
 				],
@@ -33,6 +52,68 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "GetWalletClient",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "int128",
+						"name": "",
+						"type": "int128"
+					},
+					{
+						"internalType": "int128",
+						"name": "",
+						"type": "int128"
+					},
+					{
+						"internalType": "int128",
+						"name": "",
+						"type": "int128"
+					},
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					},
+					{
+						"internalType": "int128",
+						"name": "_value",
+						"type": "int128"
+					}
+				],
+				"name": "IncreaseBalance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -48,7 +129,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/2_walletBalance_flit.sol": "NewClient"
+			"contracts/1_registerUser_flit.sol": "NewClient"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -62,12 +143,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/2_walletBalance_flit.sol": {
-			"keccak256": "0x0787e76dd4acade2e77b4e4a1f211661b18096255f0cf9f8436c97c08cf9c6c8",
+		"contracts/1_registerUser_flit.sol": {
+			"keccak256": "0x8d3931f3678632a53507599ec6ff0ab54b0b0f9c4e09ebee27b65377c52f66e4",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://2aece383b0c3e0835520efc7c61d91339ac2a65bca218b384539ee2cab62173d",
-				"dweb:/ipfs/QmRiR8yTqfz3km7n5eJZy8po2D8UhpyNm1o82t159bVTdm"
+				"bzz-raw://810e8a2f731009b9fc38e252cf72414b4a38976988f2524c0321b4814e19c3fc",
+				"dweb:/ipfs/QmU8UMESGd2nMd6PaE3A2zsU163gtfC3yAJhyXZ49YFKRf"
 			]
 		}
 	},
